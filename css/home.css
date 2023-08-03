@@ -1,0 +1,1801 @@
+@font-face {
+    font-family: BARLOW;
+    src:url('https://fonts.googleapis.com/css2?family=Kanit&family=Yanone+Kaffeesatz:wght@500&display=swap');;
+}
+
+
+*,
+::before,
+::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    color: #fff;
+    background-color: #0b0016;
+}
+
+.d-flex
+{
+    display: flex;
+}
+
+.d-block
+{
+    display: block;
+}
+
+.title-color
+{
+    color: #fff;
+}
+
+.title-yellow-color
+{
+    color: #FFBD00;
+}
+
+a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 0;
+    transition: all 0.6s;
+}
+
+.text-black
+{
+    color: black;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100vh
+}
+
+/*header*/
+
+header
+{
+    background-image: linear-gradient(to bottom, rgba(11,0,21,0.7) 0%, rgba(10,0,23,0.48) 25%, rgba(12,0,21,0.42) 32%, rgba(10,0,23,0.38) 36%, rgba(13,0,22,0.32) 43%, rgba(9,0,22,0.31) 44%, rgba(10,0,20,0.29) 46%, rgba(12,0,24,0.26) 50%, rgba(12,0,24,0.25) 51%, rgba(10,0,24,0.3) 54%, rgba(12,0,21,0.33) 56%, rgba(10,0,23,0.39) 60%, rgba(12,0,21,0.42) 62%, rgba(10,0,23,0.48) 66%, rgba(12,0,21,0.51) 68%, rgba(10,0,23,0.57) 72%, rgba(12,0,21,0.6) 74%, #0b0016 100%),url('../images/h1_hero1.jpg.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* nav */
+
+nav
+{
+    width: 85%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 7.5%;
+    background-color: black;
+    z-index: 1000;
+}
+
+.header-nav
+{
+    position: fixed;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+header ul
+{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header li
+{
+    margin-left: 45px;
+    font-size: 20px;
+}
+
+header li:last-child
+{
+    background-color: #FFBD00 !important;
+    padding: 15px 30px !important;
+    transition: all 0.4s;
+}
+
+header li:last-child:hover
+{
+    background-color: black !important;
+}
+
+header li:last-child:hover > .link-orange-hover
+{
+    color: #FFBD00;
+}
+
+.header-logo
+{
+    width: 140px;
+    height: 40px;
+}
+
+header nav a:hover
+{
+    color: palevioletred;
+}
+
+.title-header
+{
+    width: 85%;
+    margin: 180px auto 0 auto;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+}
+
+
+header h1
+{
+    font-size: 100px;
+}
+
+.date
+{
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin: 60px 150px 80px 0;
+    text-align: right;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.date h3
+{
+    color: palevioletred;
+    font-size:38px;
+}
+
+.date p
+{
+    font-size: 25px;
+}
+
+.date button
+{
+    width: 30%;
+    padding: 15px 20px;
+    font-size: 12px;
+    margin-top: 10px;
+    background-color: black;
+    color: #FFBD00;
+    border: 1px solid #FFBD00;
+    cursor: pointer;
+    transition: all 0.6s;
+    align-self: flex-end;
+}
+
+.date button:hover
+{
+    color: #fff;
+    background-color: #FFBD00;
+}
+
+/* ----------------------------------------------------- */
+/* main */
+
+main
+{
+    width: 100%;
+    background-color: #0b0016;
+    /* color: #fff; */
+}
+
+.main-about-design-week
+{
+    width: 85%;
+    height: 250px;
+    margin: 150px auto 250px auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-about-design-week h1
+{
+    font-size: 70px;
+    color: #fff;
+}
+
+.main-about-design-week-left button
+{
+    background-color: #FFBD00;
+    color:black;
+    font-size: 17px;
+    padding: 20px 32px;
+    margin-top: 20px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.main-about-design-week-left button:hover
+{
+    background-color:#0b0016 ;
+    color:#FFBD00;
+    border: 1px solid #FFBD00;
+}
+
+.main-about-design-week section
+{
+    width: 50%;
+}
+
+.main-about-design-week-expelore p
+{
+    font-size: 23px;
+    font-family: BARLOW;
+    color:rgba(192, 199, 237, 0.8);
+}
+
+.main-about-design-week-boxes
+{
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.main-about-design-week-boxes h2
+{
+    font-size: 50px;
+    font-weight: 900;
+    color: palevioletred;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-about-design-week-boxes p
+{
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------- */
+/* main-speakers */
+
+
+.main-speakers
+{
+    width: 85%;
+    margin: 80px auto;
+}
+
+.main-speakers-title
+{
+    justify-content: space-between;
+}
+
+.main-speakers-title h2
+{
+    color: #fff;
+    font-size: 70px;
+}
+
+.main-speakers-title button
+{
+    background-color: #0b0016;
+    border: 1px solid  #FFBD00;
+    color:#FFBD00;
+    padding: 10px 27px;
+    transition: all 0.5s;
+}
+
+.main-speakers-title button:hover
+{
+    color: #fff;
+    background-color: #FFBD00;
+}
+
+
+.main-speakers-boxes
+{
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.main-speakers-boxes img,h3
+{
+    transition: all 0.5s;
+}
+
+.main-speakers-box1,.main-speakers-box2,.main-speakers-box3
+{
+    flex-direction: column;
+}
+
+.main-speakers-box1:hover img,.main-speakers-box2:hover img,.main-speakers-box3:hover img
+{
+    transform: scale(1.03);
+}
+
+.main-speakers-box1 a h3:hover,.main-speakers-box2 a h3:hover,.main-speakers-box3 a h3:hover
+{
+    color: palevioletred;
+}
+
+.main-speakers-boxes h3,p
+{
+    align-items: flex-start;
+}
+
+.main-speakers-boxes h3
+{
+    font-size: 30px;
+    color: #FFBD00;
+}
+
+.main-speakers-boxes p
+{
+    color: #fff;
+    font-size: 28px;
+}
+
+.main-speakers-icons
+{
+    margin-top: 12px;
+    width: 30%;
+    background-color: #FFBD00;
+    padding: 2px 8px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.main-speakers-boxes i
+{
+    font-size: 25px;
+}
+
+.main-speakers-icons:hover
+{
+    background-color:#0b0016;
+    color: #FFBD00;
+}
+
+.main-sevices
+{
+    width: 85%;
+    margin: 150px auto;
+    justify-content: space-between;
+}
+
+
+.main-sevices-explain h2
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFBD00;
+}
+
+.main-sevices-explain h2 span:first-of-type
+{
+    color: #fff;
+}
+
+.main-sevices-explain p
+{
+    font-size: 25px;
+}
+
+.main-sevices img
+{
+    width: 747px;
+    height: 645px;
+}
+
+.main-schedule h2
+{
+    margin-left: 7.5%;
+    font-size: 70px;
+    color: #fff;
+}
+
+
+
+.schedule-date
+{
+    background-color: #0e1113;
+    width: 80%;
+    height: auto;
+    margin: 33px auto 110px auto;
+    padding: 35px 0 25px 0;
+}
+
+.schedule-nav-date
+{
+    justify-content: space-between;
+    width: 32%;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.schedule-nav-date a li
+{
+    font-size: 25px;
+}
+
+.schedule-nav-date a:first-of-type
+{
+    color: #FFBD00;
+}
+
+.schedule-row
+{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 93%;
+    margin: 15px auto;
+    padding: 20px 0 18px 0;
+    border-bottom: 1px solid #5a5757;
+}
+
+.schedule-row h4
+{
+    font-size: 28px;
+}
+
+.schedule-row p
+{
+    margin-top: 22px;
+    font-size: 25px;
+}
+
+.schedule-row:first-of-type
+{
+    border-top: 1px solid #5a5757;
+    padding-top: 100px;
+}
+
+.schedule-boxes
+{
+    width: 85%;
+    margin: 30px auto 150px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
+}
+
+.schedule-boxes h3
+{
+    color: #fff;
+    font-size: 22px;
+    width: 80%;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.schedule-boxes img
+{
+    transition: 0.5s;
+}
+
+.schedule-boxes p
+{
+    color: #9B9EAC;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.schedule-box1:hover img,.schedule-box2:hover img,.schedule-box3:hover img
+{
+    transform: scale(1.03);
+}
+
+.schedule-box1 a h3:hover,.schedule-box2 a h3:hover,.schedule-box3 a h3:hover
+{
+    color:#FFBD00;
+}
+
+.google-map
+{
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 70%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.main-schedule-icons
+{
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0e1113;
+    padding: 45px 50px;
+    width: 85%;
+    margin: 0 auto 150px auto;
+}
+
+.schedule-icons
+{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 94%;
+    margin: 20px auto 50px auto;
+}
+
+.main-schedule-icons h4
+{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* -------------------------------------------------- */
+/* footer */
+
+footer
+{
+    width: 100%;
+    background-color: #0b0016;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer .footer-contact
+{
+    margin-left: 75px;
+}
+
+.footer-container-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    width: 85%;
+    margin: 0 auto;
+    gap: 20px;
+    padding-bottom: 90px;
+}
+
+.footer-logo,.footer-contact,.footer-subscribe
+{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .footer-container-grid a,p
+{
+    color: #9B9EAC !important;
+}
+
+footer .footer-container-grid p
+{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+footer .footer-container-grid a
+{
+    display: block;
+}
+
+footer h4
+{
+    color: #fff !important;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+footer .footer-container-grid img
+{
+    margin-bottom: 15px;
+    width: 160px;
+    height: 50px;
+}
+
+footer .footer-contact a:last-of-type
+{
+    font-size: 30px;
+    color: #FFBD00 !important;
+}
+
+.footer-subscribe button
+{
+    color: #fff !important;
+    background-color: #FFBD00 !important;
+}
+
+.footer-subscribe input
+{
+    background-color: black;
+    padding: 15px 210px 15px 12px;
+    color: #5a5757;
+    font-size: 15px;
+    border: 1px solid #5a5757;
+    display: block;
+}
+
+.footer-subscribe button
+{
+    padding: 15px 30px;
+    color: #2A2A2A !important;
+    border: none;
+    background-color: #FFBD00;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.footer-contact a
+{
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.footer-container-grid
+{
+    border-bottom: 2px solid #2A2A2A;
+    margin-bottom: 60px;
+}
+
+.footer-text
+{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    font-size: 18px;
+}
+
+.footer-text a
+{
+    color: #FFBD00 !important;
+}
+
+footer .footer-icons
+{
+    justify-content: space-between;
+    width: 50%;
+}
+
+footer .facebook,footer .youtube,footer .linkedin,footer .instagram
+{
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+}
+
+footer .facebook
+{
+    background-color: #3B5998;
+    
+}
+
+footer .youtube
+{
+    background-color: crimson;
+}
+
+footer .linkedin
+{
+    background-color: #0077B5;
+}
+
+footer .instagram
+{
+    background-color: rgb(42, 42, 237);
+}
+
+.footer-text
+{
+    font-size: 14px;
+}
+
+footer .footer-text i
+{
+    color: #FFBD00;
+    font-weight: 400;
+}
+
+/* -------------------------------------- */
+/* responsive */
+
+
+@media (min-width: 991.98px) and (max-width: 1198.98px)
+{
+    body
+    {
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: #fff;
+        background-color: #0b0016;
+    }
+
+    header nav .header-logo
+    {
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    header nav ul li
+    {
+        display: none;
+    }
+
+    header
+    {
+        justify-content: space-between;
+        align-items: flex-start;
+        background-size:contain;
+        background-position: 100% 0;
+    }
+
+    nav
+    {
+        background-color: transparent;
+    }
+
+    header .title-header .header-h1
+    {
+        font-size: 65px;
+        margin-top: -60px;
+    }
+
+    header .date
+    {
+        text-align: right;
+        align-items: flex-end;
+        align-self: flex-end;
+        margin-right: 7.5%;
+    }
+    
+    header .date h3
+    {
+        font-size: 30px;
+    }
+
+    header .date p
+    {
+        font-size: 20px;
+    }
+
+    header .date button
+    {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    
+    header .date button
+    {
+        align-self: flex-end;
+    }
+
+    /* ------------------------------------- */
+    /* main */
+
+    /* main-about-design-week */
+
+   
+
+    main .main-about-design-week
+    {
+        flex-direction: row;
+        margin-top: -15px;
+    }
+
+    main .main-about-design-week h1
+    {
+        font-size: 55px;
+        margin-top: 31px;
+    }
+
+    main .main-about-design-week-left button
+    {
+        width: 80%;
+        font-size: 12px;
+        padding: 15px 20px;
+        font-weight: 600;
+    }
+
+    .main-about-design-week-expelore
+    {
+        margin-top: 30px;
+    }
+
+    main .main-about-design-week-right p
+    {
+        font-size: 20px;
+    }
+
+    .main-about-design-week-boxes h2
+    {
+        font-size: 30px;
+    }
+
+    /* ------------------------------------- */
+    /* main-speakers */
+
+    .main-speakers-title
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-speakers-title button
+    {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .main-speakers-title h2
+    {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .main-speakers-boxes
+    {
+        grid-template-columns: 350px 350px;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .main-speakers-boxes .main-speakers-icons
+    {
+        align-self: center;
+    }
+
+
+    /* ----------------------------------------- */
+    /* main-services */
+
+    main .main-sevices
+    {
+        flex-direction: row;
+    }
+
+    main .main-sevices img
+    {
+        width: 450px;
+        height: 470px;
+        text-align: left;
+    }
+
+    main .main-sevices-explain h2
+    {
+        font-size: 50px;
+    }
+    
+
+    main .main-sevices-explain p
+    {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* ----------------------------------------- */
+    /* main-schedule */
+
+    .main-schedule h2
+    {
+        font-size: 50px;
+    }
+
+    .main-schedule .schedule-nav-date
+    {
+        flex-direction: row;
+    }
+
+    .main-schedule .schedule-row
+    {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    /* ------------------------------------- */
+    /* schedule-boxes */
+
+    .main-schedule .schedule-boxes
+    {
+        grid-template-columns: 500px;
+        text-align: center !important;
+    }
+
+    .main-schedule .schedule-boxes a h3
+    {
+        margin: 20px auto;
+    }
+
+    .main-schedule .google-map
+    {
+        width: 85%;
+        margin: 25px auto;
+    }
+
+    .main-schedule .main-schedule-icons div
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-schedule .main-schedule-icons h4
+    {
+        font-size: 45px;
+    }
+
+    .main-schedule .main-schedule-icons div img
+    {
+        width: 90px;
+        height: 60px;
+        margin-top: 5px;
+    }
+
+    
+
+    /* --------------------------------- */
+    /* footer */
+    
+    .footer-container-grid
+    {
+        grid-template-columns: 100%;
+        text-align: left;
+    }
+
+    .footer-container-grid div
+    {
+        margin-top: 15px;
+    }
+
+    footer .footer-contact
+    {
+        margin-left: 0px;
+    }
+
+    footer .footer-icons
+    {
+        width: 28%;
+    }
+
+    footer .footer-text
+    {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -30px;
+    }
+
+    .footer-logo,.footer-contact
+    {
+        border-bottom: 1px solid #5a5757;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px)
+{
+    body
+    {
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: #fff;
+        background-color: #0b0016;
+    }
+
+    header nav .header-logo
+    {
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    header nav ul li
+    {
+        display: none;
+    }
+
+    header
+    {
+        justify-content: space-between;
+        align-items: flex-start;
+        background-size:contain;
+        background-position: 100% 0;
+    }
+
+    nav
+    {
+        background-color: transparent;
+    }
+
+    header .title-header .header-h1
+    {
+        font-size: 65px;
+        margin-top: -60px;
+    }
+
+    header .date
+    {
+        text-align: right;
+        align-items: flex-end;
+        align-self: flex-end;
+        margin-right: 7.5%;
+    }
+    
+    header .date h3
+    {
+        font-size: 30px;
+    }
+
+    header .date p
+    {
+        font-size: 20px;
+    }
+
+    header .date button
+    {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    
+    header .date button
+    {
+        align-self: flex-end;
+    }
+
+    /* ------------------------------------- */
+    /* main */
+
+    /* main-about-design-week */
+
+   
+
+    main .main-about-design-week
+    {
+        flex-direction: row;
+        margin-top: -15px;
+    }
+
+    main .main-about-design-week h1
+    {
+        font-size: 55px;
+        margin-top: 31px;
+    }
+
+    main .main-about-design-week-left button
+    {
+        width: 80%;
+        font-size: 12px;
+        padding: 15px 20px;
+        font-weight: 600;
+    }
+
+    .main-about-design-week-expelore
+    {
+        margin-top: 30px;
+    }
+
+    main .main-about-design-week-right p
+    {
+        font-size: 20px;
+    }
+
+    .main-about-design-week-boxes h2
+    {
+        font-size: 30px;
+    }
+
+    /* ------------------------------------- */
+    /* main-speakers */
+
+    .main-speakers-title
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-speakers-title button
+    {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .main-speakers-title h2
+    {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .main-speakers-boxes
+    {
+        grid-template-columns: 350px 350px;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .main-speakers-boxes .main-speakers-icons
+    {
+        align-self: center;
+    }
+
+
+    /* ----------------------------------------- */
+    /* main-services */
+
+    main .main-sevices
+    {
+        flex-direction: row;
+    }
+
+    main .main-sevices img
+    {
+        width: 450px;
+        height: 470px;
+        text-align: left;
+    }
+
+    main .main-sevices-explain h2
+    {
+        font-size: 50px;
+    }
+    
+
+    main .main-sevices-explain p
+    {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /* ----------------------------------------- */
+    /* main-schedule */
+
+    .main-schedule h2
+    {
+        font-size: 50px;
+    }
+
+    .main-schedule .schedule-nav-date
+    {
+        flex-direction: row;
+    }
+
+    .main-schedule .schedule-row
+    {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    /* ------------------------------------- */
+    /* schedule-boxes */
+
+    .main-schedule .schedule-boxes
+    {
+        grid-template-columns: 500px;
+        text-align: center !important;
+    }
+
+    .main-schedule .schedule-boxes a h3
+    {
+        margin: 20px auto;
+    }
+
+    .main-schedule .google-map
+    {
+        width: 85%;
+        margin: 25px auto;
+    }
+
+    .main-schedule .main-schedule-icons div
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-schedule .main-schedule-icons h4
+    {
+        font-size: 45px;
+    }
+
+    .main-schedule .main-schedule-icons div img
+    {
+        width: 90px;
+        height: 60px;
+        margin-top: 5px;
+    }
+
+    
+
+    /* --------------------------------- */
+    /* footer */
+    
+    .footer-container-grid
+    {
+        grid-template-columns: 100%;
+        text-align: left;
+    }
+
+    .footer-container-grid div
+    {
+        margin-top: 15px;
+    }
+
+    footer .footer-contact
+    {
+        margin-left: 0px;
+    }
+
+    footer .footer-icons
+    {
+        width: 28%;
+    }
+
+    footer .footer-text
+    {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -30px;
+    }
+
+    .footer-logo,.footer-contact
+    {
+        border-bottom: 1px solid #5a5757;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px)
+{
+    body
+    {
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: #fff;
+        background-color: #0b0016;
+    }
+
+    header nav .header-logo
+    {
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    header nav ul li
+    {
+        display: none;
+    }
+
+    header
+    {
+        justify-content: space-between;
+        align-items: flex-start;
+        background-size:contain;
+        background-position: 100% 0;
+    }
+
+    nav
+    {
+        background-color: transparent;
+    }
+
+    header .title-header .header-h1
+    {
+        font-size: 65px;
+        margin-top: -60px;
+    }
+
+    header .date
+    {
+        text-align: left;
+        align-items: flex-start;
+        align-self: flex-start;
+        margin-left: 7.5%;
+    }
+    
+    header .date h3
+    {
+        font-size: 30px;
+    }
+
+    header .date p
+    {
+        font-size: 20px;
+    }
+
+    header .date button
+    {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    
+    header .date button
+    {
+        align-self: flex-start;
+    }
+
+    /* ------------------------------------- */
+    /* main */
+
+    /* main-about-design-week */
+
+   
+
+    main .main-about-design-week
+    {
+        flex-direction: column;
+        margin-top: -5px;
+    }
+
+    main .main-about-design-week h1
+    {
+        font-size: 65px;
+    }
+
+    main .main-about-design-week-left button
+    {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .main-about-design-week-expelore
+    {
+        margin-top: 30px;
+    }
+
+    main .main-about-design-week-right p
+    {
+        font-size: 20px;
+    }
+
+    .main-about-design-week-boxes h2
+    {
+        font-size: 30px;
+    }
+
+    /* ------------------------------------- */
+    /* main-speakers */
+
+    .main-speakers-title
+    {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .main-speakers-title button
+    {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .main-speakers-title h2
+    {
+        font-size: 50px;
+        margin-top: 230px;
+        margin-bottom: 15px;
+    }
+
+    .main-speakers-boxes
+    {
+        grid-template-columns: 400px;
+        text-align: center;
+    }
+
+    .main-speakers-boxes .main-speakers-icons
+    {
+        align-self: center;
+    }
+
+
+    /* ----------------------------------------- */
+    /* main-services */
+
+    main .main-sevices
+    {
+        flex-direction: column-reverse;
+    }
+
+    main .main-sevices img
+    {
+        width: 400px;
+        height: 300px;
+        text-align: left;
+    }
+
+    main .main-sevices-explain h2
+    {
+        font-size: 60px;
+    }
+    
+
+    main .main-sevices-explain p
+    {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    /* ----------------------------------------- */
+    /* main-schedule */
+
+    .main-schedule h2
+    {
+        font-size: 65px;
+    }
+
+    .main-schedule .schedule-nav-date
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-schedule .schedule-row
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ------------------------------------- */
+    /* schedule-boxes */
+
+    .main-schedule .schedule-boxes
+    {
+        grid-template-columns: 400px;
+        text-align: center !important;
+    }
+
+    .main-schedule .schedule-boxes a h3
+    {
+        margin: 20px auto;
+    }
+
+    .main-schedule .google-map
+    {
+        width: 85%;
+        margin: 25px auto;
+    }
+
+    .main-schedule .main-schedule-icons div
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-schedule .main-schedule-icons h4
+    {
+        font-size: 55px;
+    }
+
+    .main-schedule .main-schedule-icons div img
+    {
+        width: 140px;
+        height: 80px;
+        margin-top: 50px;
+    }
+
+    
+
+    /* --------------------------------- */
+    /* footer */
+    
+    .footer-container-grid
+    {
+        grid-template-columns: 450px;
+        text-align: left;
+    }
+
+    .footer-container-grid div
+    {
+        margin-top: 15px;
+    }
+
+    footer .footer-contact
+    {
+        margin-left: 0px;
+    }
+
+    footer .footer-text
+    {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -30px;
+    }
+
+    .footer-logo,.footer-contact
+    {
+        border-bottom: 1px solid #5a5757;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 575.98px)
+{
+    body
+    {
+        font-family: 'Kanit', sans-serif;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: #fff;
+        background-color: #0b0016;
+    }
+
+    header nav .header-logo
+    {
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    header nav ul li
+    {
+        display: none;
+    }
+
+    header
+    {
+        justify-content: space-between;
+        align-items: flex-start;
+        background-size:contain;
+        background-position: 100% 0;
+    }
+
+    nav
+    {
+        background-color: transparent;
+    }
+
+    header .title-header .header-h1
+    {
+        font-size: 50px;
+        margin-top: -50px;
+    }
+
+    header .date
+    {
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 7.5%;
+    }
+    
+    header .date h3
+    {
+        font-size: 25px;
+    }
+
+    header .date p
+    {
+        font-size: 20px;
+    }
+
+    header .date button
+    {
+        font-size: 10px;
+        padding: 7px 3px;
+    }
+    
+    header .date button
+    {
+        align-self: flex-start;
+    }
+
+    /* ------------------------------------- */
+    /* main */
+
+    /* main-about-design-week */
+
+   
+
+    main .main-about-design-week
+    {
+        flex-direction: column;
+        margin-top: -5px;
+    }
+
+    main .main-about-design-week h1
+    {
+        font-size: 50px;
+    }
+
+    main .main-about-design-week-left button
+    {
+        width: 50%;
+        font-size: 11px;
+    }
+
+    .main-about-design-week-expelore
+    {
+        margin-top: 30px;
+    }
+
+    main .main-about-design-week-right p
+    {
+        font-size: 15px;
+    }
+
+    .main-about-design-week-boxes h2
+    {
+        font-size: 25px;
+    }
+
+    /* ------------------------------------- */
+    /* main-speakers */
+
+    .main-speakers-title
+    {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .main-speakers-title button
+    {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .main-speakers-title h2
+    {
+        font-size: 50px;
+        margin-top: 110px;
+        margin-bottom: 10px;
+    }
+
+    .main-speakers-boxes
+    {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .main-speakers-boxes .main-speakers-icons
+    {
+        align-self: center;
+    }
+
+
+    /* ----------------------------------------- */
+    /* main-services */
+
+    main .main-sevices
+    {
+        flex-direction: column-reverse;
+    }
+
+    main .main-sevices img
+    {
+        width: 450px;
+        height: 380px;
+       text-align: center;
+    }
+
+    main .main-sevices-explain h2
+    {
+        font-size: 50px;
+    }
+    
+
+    main .main-sevices-explain p
+    {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* ----------------------------------------- */
+    /* main-schedule */
+
+    .main-schedule h2
+    {
+        font-size: 50px;
+    }
+
+    .main-schedule .schedule-nav-date
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-schedule .schedule-row
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ------------------------------------- */
+    /* schedule-boxes */
+
+    .main-schedule .schedule-boxes
+    {
+        grid-template-columns: 1fr;
+        text-align: center !important;
+    }
+
+    .main-schedule .schedule-boxes a h3
+    {
+        margin: 20px auto;
+    }
+
+    .main-schedule .google-map
+    {
+        width: 85%;
+        margin: 25px auto;
+    }
+
+    .main-schedule .main-schedule-icons div
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-schedule .main-schedule-icons div img
+    {
+        width: 140px;
+        height: 80px;
+        margin-top: 50px;
+    }
+
+    
+
+    /* --------------------------------- */
+    /* footer */
+    
+    .footer-container-grid
+    {
+        grid-template-columns: 450px;
+        text-align: left;
+    }
+
+    .footer-container-grid div
+    {
+        margin-top: 15px;
+    }
+
+    footer .footer-contact
+    {
+        margin-left: 0px;
+    }
+
+    footer .footer-text
+    {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -30px;
+    }
+
+    .footer-logo,.footer-contact
+    {
+        border-bottom: 1px solid #5a5757;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
